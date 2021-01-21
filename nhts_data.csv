@@ -1,0 +1,21 @@
+group,subgroup,Total LMI Pop,Subset Population,Subset Population Percentage
+Race ,American Indian or Alaskan Native," 371,320 ", 399 ,0.00
+Race ,Asian," 371,320 "," 68,943 ",0.19
+Race ,Black or African American," 371,320 "," 20,308 ",0.05
+Race ,Don't know," 371,320 "," 4,912 ",0.01
+Race ,Native Hawaiian or other Pacific Islander," 371,320 "," 4,854 ",0.01
+Race ,Other," 371,320 "," 50,332 ",0.14
+Race ,Refused," 371,320 "," 5,657 ",0.02
+Race ,Two or More Races," 371,320 "," 16,562 ",0.04
+Race ,White or Caucasian," 371,320 "," 199,354 ",0.54
+Education,Some College,371320.4424,132508.3466,0.36
+Education,HS or Eqiv,371320.4424,113831.8172,0.31
+Education,Not HS Grad,371320.4424,41959.95423,0.11
+Education,Bachelor's degree,371320.4424,49350.95842,0.13
+Education,Advanced Degree,371320.4424,33599.96528,0.09
+Education,I don't know,371320.4424,69.400723,0.00
+Ethnicity,Hispanic or Latino," 371,320 "," 167,914 ",0.45
+Ethnicity,Not Hispanic or Latino," 371,320 "," 203,280 ",0.55
+Ethnicity,Prefer not to answer," 371,320 ", 127 ,0.00
+Gender,Male,371320.4424,176707.6453,0.48
+Gender,Female,371320.4424,194612.7972,0.52
