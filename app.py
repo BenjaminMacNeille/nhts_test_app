@@ -9,7 +9,7 @@ from plotly.graph_objs import *
 
 ###### Import a dataframe #######
 #df = pd.read_csv('nhts_data.csv')
-url = "https://github.com/BenjaminMacNeille/nhts_test_app/nhts_data.csv"
+url = "https://raw.githubusercontent.com/BenjaminMacNeille/nhts_test_app/nhts_data.csv"
 df = pd.read_csv(url, sep=",")
 
 options_list=list(df['group'].value_counts().sort_index().index)
