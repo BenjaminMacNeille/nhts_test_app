@@ -15,10 +15,12 @@ options_list=list(df['group'].value_counts().sort_index().index)
 #options_list=list(df['jurisdiction'].value_counts().sort_index().index)
 
 ########### Initiate the app
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = dash.Dash(__name__, 
+                #external_stylesheets=external_stylesheets
+                )
 server = app.server
-app.title='VA 2016'
+app.title='NHTS Data'
 
 ####### Layout of the app ########
 app.layout = html.Div([
