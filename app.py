@@ -9,13 +9,14 @@ from plotly.graph_objs import *
 
 ###### Import a dataframe #######
 #df = pd.read_csv('nhts_data.csv')
-url = "https://raw.githubusercontent.com/BenjaminMacNeille/nhts_test_app/nhts_data.csv"
-df = pd.read_csv(url, sep=",")
+#url = "https://raw.githubusercontent.com/BenjaminMacNeille/nhts_test_app/nhts_data.csv"
+#df = pd.read_csv(url, sep=",")
 
+df = pd.read_pickle('nhts_data.pkl')
 options_list=list(df['group'].value_counts().sort_index().index)
 
-#df = pd.read_csv('virginia_totals.pkl')
-#options_list=list(df['jurisdiction'].value_counts().sort_index().index)
+#df = pd.read_csv('nhts_data.csv')
+#options_list=list(df['group'].value_counts().sort_index().index)
 
 ########### Initiate the app
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -23,7 +24,7 @@ app = dash.Dash(__name__,
                 #external_stylesheets=external_stylesheets
                 )
 server = app.server
-app.title='NHTS Data'
+app.title='NHTS Data 2'
 
 ####### Layout of the app ########
 app.layout = html.Div([
@@ -56,6 +57,7 @@ def group_picker(group_name):
 
     fig = go.Figure(data = [go.Bar(x=group_df["subgroup"], 
                                     y=group_df["Subset Population"],
+                                    text = group_df["Subset Population Percentage"]*100
                                     #name= group_df["subgroup"]
                                     )]
                                     )
